@@ -1,0 +1,45 @@
+/* Estilos CSS para la grilla de productos */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinear a la izquierda */
+}
+
+.grid-item {
+    box-sizing: border-box; /* Incluir el borde y el padding en el cálculo del ancho total */
+    border: 1px solid #ccc;
+    width: calc(25% - 30px); /* Ancho de cada columna (25% - margen y borde) */
+    padding: 0 10px; /* Padding horizontal de 10px en cada lado para crear el espacio entre columnas */
+    margin: 0 15px; /* Margen horizontal de 15px en cada lado para crear el espacio entre columnas */
+	margin-bottom: 20px; /* Espacio entre filas */
+}
+
+
+.imagen-destacada {
+    border: 2px solid #ccc; /* Borde de color gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar cualquier parte de la imagen que se desborde */
+}
+
+.contenido {
+    padding: 10px; /* Espaciado interno del contenido */
+}
+
+.subcategory-heading {
+    margin-top: 45px!important;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 10px 0;
+	padding-left: 15px;
+    box-sizing: border-box;
+}
+
+/* Limpiar float */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.fusion-post-cards-archives-tb{display: none!important}
